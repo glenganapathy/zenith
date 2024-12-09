@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+		<title>Zenith | Focus. Learn. Achieve</title>
+		<link rel="icon" href="logo.png" type="image/x-icon" />
+	</head>
+	<body>
+		
+		<!-- Header -->
+		<header class="header">
+			<div class="logo-name">
+				<img src="logo.png" alt="Logo" class="header-logo"> 
+				<h1 class="header-title">Zenith</h1>
+			</div>
+			<div class="icon-container">
+				<span class="material-symbols-rounded" id="icon_buttons">settings</span>
+				<span class="material-symbols-rounded" id="icon_buttons">account_circle</span> 
+				<span class="material-symbols-rounded" id="icon_buttons">menu</span>
+			</div>
+		</header>	
+		<main class="grid-container">
+
+			<!-- Japanese Lofi gif Section-->
+			<div class="container lofi-gif">
+				<img class="lofi-img" src="https://i.pinimg.com/originals/71/92/b3/7192b36dadb8d4dd4eb71a4227cc6a95.gif" alt="gif">
+			</div>
+
+			<!-- Calendar Section-->
+			<div class="container calendar-view">
+				<h1> Calendar </h1>
+				<div class="wrapper">
+					<header>
+						<p class="current-date"></p>
+						<div class="icons">
+							<span id="prev" class="material-symbols-rounded">chevron_left</span>
+							<span id="next" class="material-symbols-rounded">chevron_right</span>
+						</div>
+					</header>
+					<div class="calendar">
+						<ul class="weeks">
+							<li>Sun</li>
+							<li>Mon</li>
+							<li>Tue</li>
+							<li>Wed</li>
+							<li>Thu</li>
+							<li>Fri</li>
+							<li>Sat</li>
+						</ul>
+						<ul class="days"></ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Dictionary Lookup section -->
+			<div class="container dictionary-lookup">
+				<h2>Dictionary Lookup</h2>
+				<br>
+				<div class="search-container">
+					<input type="text" id="wordInput" placeholder="Enter a word" />
+					<button id="lookupButton">
+					<span class="magnifying-glass">🔎︎</span>
+					</button>
+				</div>
+				<div id="resultContainer" class="result-container"><p>Please enter a word.</p></div>
+			</div>
+
+			<!--To Do List Section -->
+			<div class="container task-section">
+				<br>
+				<h1>Tasks</h1>
+				<br>
+				<div class="todo-container">
+					<ul id="todoList"></ul>
+					<button id="addTaskButton">+</button>
+				</div>
+			</div>
+
+			<!-- Quotes section -->
+			<div class="container quotes-section">
+				<div class="quote-container">
+					<p id="quote" class="quote-text">"The best way to predict the future is to create it."</p>
+					<button id="refresh-quote" class="refresh-button">🗘</button>
+				</div>
+			</div>
+
+			<!-- Quick Links Section -->
+			<div class="container quick-links-section">
+				<h1>Quick Links</h1>
+				<div class="links-section">
+					<a href="https://www.google.com" target="_blank" class="logo-link">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png" alt="Google Logo" class="logo">
+					</a>
+					<a href="https://chatgpt.com/?model=auto" target="_blank" class="logo-link">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/1024px-ChatGPT-Logo.svg.png" alt="ChatGPT Logo" class="logo">
+					</a>
+					<a href="https://www.youtube.com" target="_blank" class="logo-link">
+					<img src="https://www.pngall.com/wp-content/uploads/13/Logo-Youtube-PNG-Images.png" alt="YouTube Logo" class="logo">
+					</a>
+					<a href="https://scholar.google.com/" target="_blank" class="logo-link">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png  " alt="Scholar Logo" class="logo">
+					</a>
+					<a href="https://stackoverflow.com/" target="_blank" class="logo-link">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Stack_Overflow_icon.svg/2048px-Stack_Overflow_icon.svg.png  " alt="Stack Overflow Logo" class="logo">
+					</a>
+					<a href="https://quillbot.com/" target="_blank" class="logo-link">
+						<img src="https://theprocesshacker.com/wp-content/uploads/2024/06/Quillbot-logo.png" alt="Quillbot Logo" class="logo">
+					</a>
+					<a href="https://www.desmos.com/" target="_blank" class="logo-link">
+						<img src="https://d8p1x3h4xd5gq.cloudfront.net/59822132ca753d719145cc4c/public/5dc4a61be2339e33d74d74b8.jpg" alt="Desmos Logo" class="logo">
+					</a>
+					<a href="https://github.com/" target="_blank" class="logo-link">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDZ-A0QYVwqjC7qUKbvQjYc793lMupzDDsNQ&s" alt="GitHub Logo" class="logo">
+					</a>
+				</div>
+			</div>
+
+			<!-- Pomodoro section -->
+			<div class="container pomodoro-section">
+				<h1>Pomodoro</h1>
+				<br><br><br>
+				<span class="timer" id="countdownTimer">25:00</span> <br>
+				<div class="button-container">
+					<button id="startButton">Start</button>
+					<button id="resetButton">Reset</button>
+				</div>
+			</div>
+
+			<!-- Audio player -->
+			<div class="container audio-section">
+				<div class="music-player">
+					<div class="music-info">
+						<h1 class="track-title">Song Title</h1>
+						<h3 class="track-artist">Artist Name</h3>
+					</div>
+					<img src="https://via.placeholder.com/300" alt="Album Cover" class="album-cover" />
+					<audio id="audio" src="path/to/your/song1.mp3"></audio>
+					<div class="controls">
+						<button id="previous" class="control-button">❮</button>
+						<button id="play" class="control-button">▶</button>
+						<button id="nextsong" class="control-button">❯</button>
+					</div>
+					<div class="progress-container">
+						<input type="range" id="progress" value="0" max="100" />
+					</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer">
+      	<ul class="social-icon">
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a></li>
+      </ul>
+      <p>&copy;2024 Glen Ganapathy | This was CS50</p>
+    </footer>
+
+		<!-- JavaScript for Pomodoro-->
+		<script>
+			// JavaScript for countdown timer
+			let timeLeft = 1499; // 25 minutes in seconds (25 * 60)
+			const timerElement = document.getElementById('countdownTimer');
+			let timerInterval;
+			let isPaused = false;
+			
+			function updateTimer() {
+			  if (!isPaused) {
+			    const minutes = Math.floor(timeLeft / 60);
+			    const seconds = timeLeft % 60;
+			    timerElement.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+			    if (timeLeft > 0) {
+			      timeLeft--;
+			    } else {
+			      clearInterval(timerInterval);
+			      timerElement.textContent = 'Time\'s up!';
+			      document.getElementById('startButton').textContent = 'Start'; // Reset button text after timer ends
+			    }
+			  }
+			}
+			
+			function startTimer() {
+			  if (!timerInterval) {
+			    timerInterval = setInterval(updateTimer, 1000);
+			    document.getElementById('startButton').textContent = 'Pause'; // Change button text to "Pause"
+			  }
+			}
+			
+			function pauseTimer() {
+			  isPaused = true; // Set paused state
+			  document.getElementById('startButton').textContent = 'Resume'; // Change button text to "Resume"
+			}
+			
+			function resumeTimer() {
+			  isPaused = false; // Unset paused state
+			  document.getElementById('startButton').textContent = 'Pause'; // Change button text back to "Pause"
+			}
+			
+			function resetTimer() {
+			  clearInterval(timerInterval);
+			  timerInterval = null;
+			  timeLeft = 1500; // Reset to 25 minutes
+			  isPaused = false; // Unpause when resetting
+			  timerElement.textContent = '25:00'; // Reset display
+			  document.getElementById('startButton').textContent = 'Start'; // Reset button text
+			}
+			
+			// Add event listeners to buttons
+			document.getElementById('startButton').addEventListener('click', function() {
+			  if (!timerInterval) {
+			    startTimer(); // If timer is not running, start it
+			  } else if (isPaused) {
+			    resumeTimer(); // If paused, resume it
+			  } else {
+			    pauseTimer(); // If running, pause it
+			  }
+			});
+			
+			document.getElementById('resetButton').addEventListener('click', resetTimer);
+		</script>
+
+		<!-- JavaScript for Task list-->
+		<script>
+			const todoList = document.getElementById("todoList");
+			const addTaskButton = document.getElementById("addTaskButton");
+			
+			// Load tasks from local storage
+			function loadTasks() {
+			  const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+			  tasks.forEach(task => addTask(task.text, task.completed)); // Pass task.text and task.completed
+			}
+			
+			// Function to add a new task
+			function addTask(taskText = "New Task ", completed = false) { // Accept completed parameter
+			  const li = document.createElement("li");
+			
+			  // Create task text span
+			  const taskSpan = document.createElement("span");
+			  taskSpan.textContent = taskText;
+			
+			  // Set the completed state
+			  if (completed) {
+			    taskSpan.style.textDecoration = "line-through";
+			  }
+			
+			  // Create complete button
+			  const completeButton = document.createElement("button");
+			  completeButton.innerHTML = "✔";
+			  completeButton.addEventListener("click", () => {
+			    taskSpan.style.textDecoration =
+			      taskSpan.style.textDecoration === "line-through"
+			        ? "none"
+			        : "line-through";
+			    updateLocalStorage(); // Update local storage on completion
+			  });
+			
+			  // Create delete button
+			  const deleteButton = document.createElement("button");
+			  deleteButton.innerHTML = "✖";
+			  deleteButton.addEventListener("click", () => {
+			    li.remove();
+			    updateLocalStorage(); // Update local storage on deletion
+			  });
+			
+			  // Append buttons and task to the list item
+			  li.appendChild(taskSpan);
+			  li.appendChild(completeButton);
+			  li.appendChild(deleteButton);
+			
+			  // Add the new task to the list
+			  todoList.appendChild(li);
+			  updateLocalStorage(); // Save to local storage after adding a new task
+			}
+			
+			// Update local storage
+			function updateLocalStorage() {
+			  const tasks = [];
+			  todoList.querySelectorAll("li").forEach(li => {
+			    const taskText = li.querySelector("span").textContent;
+			    const isCompleted = li.querySelector("span").style.textDecoration === "line-through";
+			    tasks.push({ text: taskText, completed: isCompleted });
+			  });
+			  localStorage.setItem("tasks", JSON.stringify(tasks));
+			}
+			
+			// Add click event to the "+" button
+			addTaskButton.addEventListener("click", () => {
+			  const taskText = prompt("Enter task name:", "New Task");
+			  if (taskText) {
+			    addTask(taskText);
+			  }
+			});
+			
+			// Load tasks on page load
+			loadTasks();
+		</script>
+
+		<!-- JavaScript for Calendar-->
+		<script>
+			const daysTag = document.querySelector(".days"),
+			currentDate = document.querySelector(".current-date"),
+			prevNextIcon = document.querySelectorAll(".icons span");
+			
+			// getting new date, current year and month
+			let date = new Date(),
+			currYear = date.getFullYear(),
+			currMonth = date.getMonth();
+			
+			// storing full name of all months in array
+			const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+			
+			const renderCalendar = () => {
+			let firstDayofMonth = new Date(currYear, currMonth, 1).getDay(), // getting first day of month
+			lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(), // getting last date of month
+			lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay(), // getting last day of month
+			lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate(); // getting last date of previous month
+			let liTag = "";
+			
+			for (let i = firstDayofMonth; i > 0; i--) { // creating li of previous month last days
+			    liTag += `<li class="inactive">${lastDateofLastMonth - i + 1}</li>`;
+			}
+			
+			for (let i = 1; i <= lastDateofMonth; i++) { // creating li of all days of current month
+			    // adding active class to li if the current day, month, and year matched
+			    let isToday = i === date.getDate() && currMonth === new Date().getMonth() 
+			                 && currYear === new Date().getFullYear() ? "active" : "";
+			    liTag += `<li class="${isToday}">${i}</li>`;
+			}
+			
+			for (let i = lastDayofMonth; i < 6; i++) { // creating li of next month first days
+			    liTag += `<li class="inactive">${i - lastDayofMonth + 1}</li>`
+			}
+			currentDate.innerText = `${months[currMonth]} ${currYear}`; // passing current mon and yr as currentDate text
+			daysTag.innerHTML = liTag;
+			}
+			renderCalendar();
+			
+			prevNextIcon.forEach(icon => { // getting prev and next icons
+			icon.addEventListener("click", () => { // adding click event on both icons
+			    // if clicked icon is previous icon then decrement current month by 1 else increment it by 1
+			    currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1;
+			
+			    if(currMonth < 0 || currMonth > 11) { // if current month is less than 0 or greater than 11
+			        // creating a new date of current year & month and pass it as date value
+			        date = new Date(currYear, currMonth, new Date().getDate());
+			        currYear = date.getFullYear(); // updating current year with new date year
+			        currMonth = date.getMonth(); // updating current month with new date month
+			    } else {
+			        date = new Date(); // pass the current date as date value
+			    }
+			    renderCalendar(); // calling renderCalendar function
+			});
+			});
+			
+		</script>
+
+		<!-- JavaScript for Quotes-->
+		<script>
+			const quotes = [
+			    "The best way to predict the future is to create it.",
+			    "Dream big and dare to fail. That will lead to victory",
+			    "The limit to our realization, is our doubts.",
+			    "Opportunities don’t happen. You create them.",
+			    "The future depends on what you do today.",
+			    "Believe you can, and you’re halfway there.",
+			    "The beauty of life lies in its imperfections.",
+			];
+			
+			const quoteElement = document.getElementById('quote');
+			const refreshButton = document.getElementById('refresh-quote');
+			
+			refreshButton.addEventListener('click', () => {
+			    const randomIndex = Math.floor(Math.random() * quotes.length);
+			    quoteElement.textContent = `"${quotes[randomIndex]}"`;
+			});
+		</script>
+		
+		<!-- JavaScript for Audio player-->
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+			  const audio = document.getElementById('audio');
+			  const playButton = document.getElementById('play');
+			  const prevButton = document.getElementById('previous');
+			  const nextButton = document.getElementById('nextsong');
+			  const progress = document.getElementById('progress');
+			
+			  // Sample tracks for demonstration
+			  const tracks = [
+			      { title: "Silent Wood", artist: "Purrple Cat", src: "audio/silent-wood(chosic.com).mp3", cover: "https://i.pinimg.com/originals/69/b3/9f/69b39f6dab8b07dc4b1e5039054b9f50.gif" },
+			      { title: "Double Rainbow", artist: "Purrple Cat", src: "audio/Double-Rainbow-chosic.com_.mp3", cover: "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ29qd3ViaTE4djR4Y2RyZXd1ZHYwNXliYm5lYzVlMWx3YWVkOHcyZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jVoiMj22yvDauHplbt/giphy.webp" },
+			      { title: "Colorful Flowers", artist: "Tokyo Music Walker", src: "audio/Colorful-Flowers(chosic.com).mp3", cover: "https://i.pinimg.com/originals/28/f7/b4/28f7b49d141a6c3b8388e56c2d39bece.gif" }
+			  ];
+			
+			  let currentTrackIndex = 0;
+			
+			  // Load the current track
+			  function loadTrack(index) {
+			      audio.src = tracks[index].src;
+			      document.querySelector('.track-title').textContent = tracks[index].title;
+			      document.querySelector('.track-artist').textContent = tracks[index].artist;
+			      document.querySelector('.album-cover').src = tracks[index].cover; // Load album cover
+			      audio.load();
+			      audio.play(); // Automatically play the track when loaded
+			      playButton.textContent = '❚❚'; // Change to pause icon
+			      progress.value = 0;
+			  }
+			
+			  document.addEventListener('DOMContentLoaded', () => {
+			    progress.value = 0; // Set initial slider position to the beginning
+			    loadTrack(currentTrackIndex); // Load the first track
+			});
+			
+			  // Play or pause the audio
+			  playButton.addEventListener('click', () => {
+			      if (audio.paused) {
+			          audio.play();
+			          playButton.textContent = '❚❚'; // Change to pause icon
+			      } else {
+			          audio.pause();
+			          playButton.textContent = '▶'; // Change to play icon
+			      }
+			  });
+			
+			  // Update the progress bar as the audio plays
+			  audio.addEventListener('timeupdate', () => {
+			      const percentage = (audio.currentTime / audio.duration) * 100;
+			      progress.value = percentage;
+			  });
+			
+			  // Seek through the audio when the progress slider is adjusted
+			  progress.addEventListener('input', () => {
+			      audio.currentTime = (progress.value / 100) * audio.duration;
+			  });
+			
+			  // Play next track
+			  nextButton.addEventListener('click', () => {
+			      currentTrackIndex = (currentTrackIndex + 1) % tracks.length; // Loop to the first track
+			      loadTrack(currentTrackIndex);
+			  });
+			
+			  // Play previous track
+			  prevButton.addEventListener('click', () => {
+			      currentTrackIndex = (currentTrackIndex - 1 + tracks.length) % tracks.length; // Loop to the last track
+			      loadTrack(currentTrackIndex);
+			  });
+			
+			  // Automatically load the next track when the current track ends
+			  audio.addEventListener('ended', () => {
+			      nextButton.click(); // Simulate next button click
+			  });
+			
+			  // Load the initial track
+			  loadTrack(currentTrackIndex);
+			});
+		</script>
+
+		<!-- JavaScript for Lookup-->
+		<script>
+			document.getElementById('lookupButton').addEventListener('click', function() {
+			    const word = document.getElementById('wordInput').value;
+			    const resultContainer = document.getElementById('resultContainer');
+			    resultContainer.innerHTML = ''; // Clear previous results
+			
+			    if (word.trim() === '') {
+			        resultContainer.innerHTML = '<p>Please enter a word.</p>';
+			        return;
+			    }
+			
+			    // Fetching data from the Dictionary API
+			    fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+			        .then(response => {
+			            if (!response.ok) {
+			                throw new Error('Word not found');
+			            }
+			            return response.json();
+			        })
+			        .then(data => {
+			            // Process and display the results
+			            const definitions = data[0].meanings[0].definitions;
+			            let output = `<h3>Definitions of "${word}":</h3>`;
+			            definitions.forEach((definition, index) => {
+			                output += `<p>${index + 1}. ${definition.definition}</p>`;
+			            });
+			            resultContainer.innerHTML = output;
+			        })
+			        .catch(error => {
+			            resultContainer.innerHTML = `<p>${error.message}</p>`;
+			        });
+			});
+		</script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	</body>
+</html>
