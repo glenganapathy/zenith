@@ -68,7 +68,7 @@ Zenith is a multi-functional productivity web application designed to help you f
   - [Dictionary API](https://dictionaryapi.dev/)
 
  ## Screenshots
-![screenshot1](screenshots/screenshot1.png)<br>
+![screenshot1](screenshots/screenshot1.png)
 ![screenshot2](screenshots/screenshot2.png)
 
 ## I worked on this project as part of my "CS50's Introduction to Computer Science" Final Project.
